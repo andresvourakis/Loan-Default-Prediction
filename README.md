@@ -1,4 +1,4 @@
-# Anyfin Data Science Case Solution
+# Loan Default Predriction
 
 ## Overview
 The goal was to build a predictive model that assigns default probabilities to loan applications. 
