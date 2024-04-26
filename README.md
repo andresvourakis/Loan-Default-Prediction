@@ -23,7 +23,7 @@ Based on my previous analysis, I decided to only focus on the top three classifi
 
 **Observations:** As we can see, all three models performed similarly, but I will choose Random Forest Classifier for the final model.
 
-More information about the different techniques used during the model selection process:
+### Model Optimization
 
 * **Over-sampling:** The SMOTE technique was used to over-sample to data since no-default was the majority class.
 * **Model Validation:** Since our dataset is fairly small, Cross-validation (K-Fold) was used as opposed to hold-out validation in order to get a more accurate validation.
