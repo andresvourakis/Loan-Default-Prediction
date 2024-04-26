@@ -29,7 +29,7 @@ More information about the different techniques used during the model selection 
 
 More details can be found on the `1-Data-Cleaning-And-EDA.ipynb` and `2-Model-Building.ipynb` notebooks.
 
-## Final Model
+## Key Results
 
 The final classification model selected was "Random Forest Classifier". 
 
