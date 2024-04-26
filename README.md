@@ -1,9 +1,9 @@
-# Loan Default Predriction
+# Loan Default Prediction
 
-## Overview
-The goal was to build a predictive model that assigns default probabilities to loan applications. 
+## Summary
+Through this analysis, I concluded "Random Forest Classifier" to be the best predictive model to assign default probabilities to loan applications. 
 
-**Optimization:** It was assumed that Anyfin cares more about accurately predicting defaulters rather than non-defaulters. Therefore, the predictive model was optimized for sensitivity (recall).
+**Assumption:** It was assumed that Anyfin cares more about accurately predicting defaulters rather than non-defaulters. Therefore, the predictive model was optimized for sensitivity (recall).
 
 ## Approach
 In order to tackle this problem, the dataset provided was used to train a classification model. I began by doing some exploratory data analysis on the entire dataset in order to better understand it's features. Then, I cleaned the data to prepare it for the model building step. During the model building step, the data was transformed to get it ready for training. I trained several classification models and then compared them to each other using accuracy, sensitivity and precision scores. Here is more information on how model selection was approached:
@@ -24,14 +24,14 @@ More information about the different techniques used during the model selection 
 
 * **Over-sampling:** The SMOTE technique was used to over-sample to data since no-default was the majority class.
 * **Model Validation:** Since our dataset is fairly small, Cross-validation (K-Fold) was used as opposed to hold-out validation in order to get a more accurate validation.
-* **Feature Selection:** No feature selection, aside from dropping some columns during the data cleaning step, was performed. This step was excluded for time saving purposes. Recursive Feature Elimination could've been used.
+* **Feature Selection:** No feature selection, aside from dropping some columns during the data cleaning step, was performed. This step was excluded for time-saving purposes. Recursive Feature Elimination could've been used.
 * **Hyperparameter Tuning:** Grid Search Cross Validation was used to fine tune the hyperparameters for each of the top classification models. This method was used as opposed to Bayesian Optimization since it is the easiest to implement. 
 
 More details can be found on the `1-Data-Cleaning-And-EDA.ipynb` and `2-Model-Building.ipynb` notebooks.
 
 ## Final Model
 
-The final classification model selected was Random Forest Classifier. 
+The final classification model selected was "Random Forest Classifier". 
 
 * Accuracy: 0.882318
 * Sensitivity: 0.823843
