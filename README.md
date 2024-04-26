@@ -1,12 +1,15 @@
 # Loan Default Prediction
 
 ## Summary
-Through this analysis, I concluded "Random Forest Classifier" to be the best predictive model to assign default probabilities to loan applications. 
+Through this analysis, I concluded "Random Forest Classifier" to be the best predictive model to assign default probabilities to loan applications with a final accuracy of 88%.
 
-**Assumption:** It was assumed that Anyfin cares more about accurately predicting defaulters rather than non-defaulters. Therefore, the predictive model was optimized for sensitivity (recall).
+**Assumption:** It was assumed that accurately predicting defaulters rather than non-defaulters was of highest importance to the business. Therefore, the predictive model was optimized for sensitivity (recall).
 
 ## Approach
-In order to tackle this problem, the dataset provided was used to train a classification model. I began by doing some exploratory data analysis on the entire dataset in order to better understand it's features. Then, I cleaned the data to prepare it for the model building step. During the model building step, the data was transformed to get it ready for training. I trained several classification models and then compared them to each other using accuracy, sensitivity and precision scores. Here is more information on how model selection was approached:
+The first step was to do exploratory data analysis on the entire dataset in order to become more familiar with the domain and understand the type of features provided.
+Then, I cleaned the data and proceeded to train several classification models and compare them to each other using accuracy, sensitivity, and precision scores in order to identify the most accurate model.
+
+Here is more information on how model selection was approached:
 
 ### Model Selection
 
